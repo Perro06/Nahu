@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Negocios+ | Landing Asesorías de mejoras de negocios</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <!-- FontAwesome para íconos Redes Sociales -->
+  <script src="https://kit.fontawesome.com/5fa7774cda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header fijo -->
+  <header>
+    <span class="logo">Negocios +</span>
+    <nav class="nav">
+      <a href="#promos">Promos</a>
+      <a href="#conocerme">Conocerme</a>
+      <a href="#reseñas">Reseñas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PROMOS -->
+    <section id="promos">
+      <h2>PROMOS</h2>
+      <div class="promos">
+        <div class="promo-card">
+          <h3>Optimización Express</h3>
+          <p>Auditoría rápida de tu negocio y recomendaciones inmediatas para mejorar procesos.</p>
+          <small>¡Ideal para acción rápida!</small>
+        </div>
+        <div class="promo-card">
+          <h3>Coaching Comercial</h3>
+          <p>Mejora tus técnicas de ventas y gestión de clientes con sesiones personalizadas.</p>
+          <small>Haz crecer tu cartera de clientes.</small>
+        </div>
+        <div class="promo-card">
+          <h3>Transformación Digital</h3>
+          <p>Implementa herramientas digitales para automatizar y escalar tu negocio.</p>
+          <small>Lleva tu negocio al siguiente nivel.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONOCERME -->
+    <section id="conocerme">
+      <h2>CONOCERME</h2>
+      <div class="seller-info">
+        <img src="img/foto-vendedor.jpg" alt="Foto del vendedor">
+        <div>
+          <h3>Nahu</h3>
+          <p>Consultor apasionado en mejoras de negocios. Ayudo a emprendedores y pymes a identificar sus bloqueos y acelerar su crecimiento con visión estratégica, herramientas modernas y trato personalizado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section id="reseñas">
+      <h2>RESEÑAS</h2>
+      <div class="review">
+        <div class="review-video">
+          <!-- Video embebido desde Google Drive -->
+          <iframe src="https://drive.google.com/file/d/0B3p5_GMy98PXNHM1ZXNnczZ2ZzA/preview"
+                  width="100%" height="250" allow="autoplay" frameborder="0"></iframe>
+        </div>
+        <div class="review-info">
+          <h4>María Torres</h4>
+          <p><strong>Contacto:</strong> maria@email.com</p>
+          <p><strong>Rubro:</strong> Comercio minorista</p>
+          <p>La asesoría me ayudó a organizar mi negocio y mejorar mi rentabilidad. Muy recomendado por su atención, experiencia y visión.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTANOS -->
+    <section id="contacto">
+      <h2>CONTACTANOS</h2>
+      <p>Agenda tu consulta directamente en nuestro calendario:</p>
+      <iframe 
+        class="calendar"
+        src="https://calendar.google.com/calendar/embed?src=pablohaylan%40gmail.com&ctz=America%2FArgentina%2FBuenos_Aires"
+        frameborder="0"
+        scrolling="no"></iframe>
+      <p>O envía tu consulta a 
+        <a href="mailto:pablohaylan@gmail.com">pablohaylan@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER CON REDES -->
+  <footer>
+    <div>© 2024 Negocios + | Asesorías de mejoras de negocios</div>
+    <div class="social-icons">
+      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
