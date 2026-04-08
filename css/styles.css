@@ -69,6 +69,46 @@ section {
 .promo-card h3 {
   color: #ff4081;
 }
+
+/* Accordion */
+.accordion-toggle {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0.4rem 0;
+  user-select: none;
+  transition: color 0.2s;
+}
+.accordion-toggle:hover {
+  color: #ff6fa8;
+}
+.accordion-icon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #ff4081;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 0.6rem;
+}
+.accordion-toggle[aria-expanded="true"] .accordion-icon {
+  transform: rotate(180deg);
+}
+.accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0;
+  text-align: left;
+}
+.accordion-content.is-open {
+  max-height: 600px;
+  padding-top: 0.8rem;
+}
 .seller-info {
   display: flex;
   align-items: center;
