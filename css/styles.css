@@ -53,12 +53,12 @@ section {
 }
 .promos {
   display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
 }
 .promo-card {
-  flex: 1 0 28%;
+  width: 100%;
+  box-sizing: border-box;
   background: #212121;
   border: 1px solid #333;
   border-radius: 12px;
