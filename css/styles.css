@@ -149,12 +149,38 @@ section {
 .review-info p {
   margin: 0.2em 0;
 }
-.calendar {
-  width: 100%;
-  min-height: 400px;
-  border: none;
-  border-radius: 10px;
-  margin-top: 1rem;
+.booking-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  background: #212121;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.booking-desc {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #f4f4f4;
+}
+.booking-btn {
+  display: inline-block;
+  background: #ffc107;
+  color: #191919;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 2px 8px #0004;
+}
+.booking-btn:hover {
+  background: #ffca2c;
+  transform: translateY(-2px);
 }
 footer {
   background: #111;
@@ -178,18 +204,33 @@ footer {
 /* Hamburger button - hidden on desktop */
 .hamburger {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   background: none;
   border: none;
-  color: #ffc107;
-  font-size: 1.6rem;
   cursor: pointer;
-  padding: 0.2rem 0.4rem;
-  line-height: 1;
+  padding: 0.4rem;
+  z-index: 200;
+}
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #ffc107;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+/* Nav open state — applies at any screen size when .open is toggled */
+.nav.open {
+  display: flex !important;
 }
 
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: flex;
   }
   .nav {
     display: none;
@@ -202,9 +243,6 @@ footer {
     background: #222;
     border-top: 1px solid #333;
     z-index: 100;
-  }
-  .nav.open {
-    display: flex;
   }
   .nav a {
     padding: 0.9rem 2rem;

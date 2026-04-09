@@ -14,7 +14,9 @@
   <header>
     <span class="logo">Negocios +</span>
     <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
-      <i class="fas fa-bars"></i>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </button>
     <nav class="nav" id="main-nav">
       <a href="#promos">Promos</a>
@@ -66,7 +68,7 @@
             <p><small>•	emprendedores que ya publican pero no convierten</small></p>
             <p><small>•	personas que corren campañas y no entienden resultados</small></p>
             <p><small>•	negocios que venden por recomendación y quieren crecer</small></p>
-            <p><small>•	marcas personales que sienten que “hacen contenido pero no pasa nada”</small></p>
+            <p><small>•	marcas personales que sienten que "hacen contenido pero no pasa nada"</small></p>
             
             <p><b>Qué resultado busca:</b></p>
             <p><small>•	claridad sobre qué está frenando el crecimiento</small></p>
@@ -182,9 +184,25 @@
     <!-- CONTACTANOS -->
     <section id="contacto">
       <h2>CONTACTANOS</h2>
-      <p>Agenda tu consulta directamente en nuestro calendario:</p>
-      <iframe src="https://calendar.google.com/calendar/embed?src=pablohaylan%40gmail.com&ctz=America%2FArgentina%2FBuenos_Aires" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      <p>O envía tu consulta a 
+      <div class="booking-box">
+        <p class="booking-desc">¿Listo para dar el próximo paso? Reservá tu consulta en el horario que mejor te quede.</p>
+        <a
+          href="https://calendar.google.com/calendar/embed?src=pablohaylan%40gmail.com&ctz=America%2FArgentina%2FBuenos_Aires"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="booking-btn">
+          📅 Reservar una consulta
+        </a>
+        <!--
+          INSTRUCCIÓN PARA EL DUEÑO DEL SITIO:
+          1. En Google Calendar, hacé clic en "+ Crear" → "Programación de citas".
+          2. Configurá el nombre, duración y disponibilidad de los turnos.
+          3. Publicá la programación y copiá el enlace de reserva que Google genera.
+          4. Reemplazá la URL del atributo href del botón de arriba con ese enlace.
+          Ejemplo de URL: https://calendar.google.com/calendar/u/0/appointments/schedules/AbCdEfGh...
+        -->
+      </div>
+      <p>O envía tu consulta a
         <a href="mailto:pablohaylan@gmail.com">pablohaylan@gmail.com</a>
       </p>
     </section>
