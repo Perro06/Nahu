@@ -109,7 +109,8 @@ section {
   text-align: left;
 }
 .accordion-content.is-open {
-  max-height: 600px;
+  max-height: 350px;
+  overflow-y: auto;
   padding-top: 0.8rem;
 }
 .seller-info {
