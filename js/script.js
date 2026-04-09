@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Hamburger menu toggle
+  var hamburgerBtn = document.getElementById('hamburger-btn');
+  var mainNav = document.getElementById('main-nav');
+
+  if (hamburgerBtn && mainNav) {
+    hamburgerBtn.addEventListener('click', function () {
+      var isOpen = mainNav.classList.toggle('open');
+      hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Close menu when a nav link is clicked
+    mainNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mainNav.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // Accordion toggles
   var toggles = document.querySelectorAll('.accordion-toggle');
 
   toggles.forEach(function (toggle) {
